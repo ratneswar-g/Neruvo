@@ -1,0 +1,193 @@
+{
+  "id": "journey-1791184464523-94a2e",
+  "patientId": "dev-user-patient-1",
+  "carePartnerId": "dev-user-partner-1",
+  "pickupLocation": {
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "address": "[DEMO] 104 Sunrise Apts, 4th Main, Indiranagar, Bengaluru (Sample Address)",
+    "landmark": "Near Indiranagar Metro Station (Exit B)",
+    "accessInstructions": "Elevator available, ground floor ramp on the left side of building."
+  },
+  "hospitalDestination": {
+    "id": "hosp-manipal",
+    "name": "[DEMO] Manipal Hospital (Sample Destination)",
+    "address": "[DEMO] 98 HAL Airport Road, Kodihalli, Bengaluru (Sample)",
+    "latitude": 12.9592,
+    "longitude": 77.6499,
+    "entranceOrDepartment": "Specialty Clinic Pavilion (East Wing)",
+    "accessNotes": "Companion assistance desk immediately inside."
+  },
+  "returnDropoffLocation": {
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "address": "[DEMO] 104 Sunrise Apts, 4th Main, Indiranagar, Bengaluru (Sample Address)",
+    "landmark": "Near Indiranagar Metro Station (Exit B)",
+    "accessInstructions": "Elevator available, ground floor ramp on the left side of building."
+  },
+  "currentState": "EMERGENCY_ACTIVE",
+  "bookingType": "ON_DEMAND",
+  "isRoundTrip": true,
+  "stateHistory": [
+    {
+      "fromState": "DRAFT",
+      "toState": "DRAFT",
+      "timestamp": "2026-10-05T07:14:24.523Z",
+      "triggeredByUserId": "dev-user-patient-1",
+      "note": "Journey created in DRAFT state."
+    },
+    {
+      "fromState": "DRAFT",
+      "toState": "REQUESTED",
+      "timestamp": "2026-10-05T07:14:24.524Z",
+      "triggeredByUserId": "dev-user-patient-1",
+      "note": "Booking requested by patient."
+    },
+    {
+      "fromState": "REQUESTED",
+      "toState": "MATCHING",
+      "timestamp": "2026-10-05T07:14:24.524Z",
+      "triggeredByUserId": "system",
+      "note": "Auto-matching nearest available Care Partner."
+    },
+    {
+      "fromState": "MATCHING",
+      "toState": "PARTNER_ASSIGNED",
+      "timestamp": "2026-10-05T07:14:24.524Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "Care Partner [DEMO] Ramesh Kumar (Test Care Partner) accepted journey dispatch."
+    },
+    {
+      "fromState": "PARTNER_ASSIGNED",
+      "toState": "EMERGENCY_ACTIVE",
+      "timestamp": "2026-10-05T07:14:24.524Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "EMERGENCY SOS triggered by [DEMO] Ramesh Kumar (Test Care Partner) (CARE_PARTNER) - ACCIDENT"
+    }
+  ],
+  "stateTimestamps": {
+    "DRAFT": "2026-10-05T07:14:24.523Z",
+    "REQUESTED": "2026-10-05T07:14:24.524Z",
+    "MATCHING": "2026-10-05T07:14:24.524Z",
+    "PARTNER_ASSIGNED": "2026-10-05T07:14:24.524Z",
+    "EMERGENCY_ACTIVE": "2026-10-05T07:14:24.524Z"
+  },
+  "fareEstimate": {
+    "currency": "INR",
+    "baseBookingFee": 250,
+    "companionServiceTimeFee": 600,
+    "transitDistanceFee": 350,
+    "platformServiceFee": 100,
+    "taxes": 90,
+    "total": 1390,
+    "isEstimate": true,
+    "components": [
+      {
+        "code": "BASE_SERVICE",
+        "name": "Base Service & Dispatch Fee",
+        "amount": 250,
+        "description": "Care Partner allocation, dispatch, and initial care coordination."
+      },
+      {
+        "code": "TRANSIT_DISTANCE",
+        "name": "Round-Trip Transportation (Two-Leg Distance)",
+        "amount": 350,
+        "description": "Complete two-leg travel: Outbound + Return legs."
+      },
+      {
+        "code": "COMPANION_SERVICE_TIME",
+        "name": "Hospital Visit Accompaniment",
+        "amount": 600,
+        "description": "Care Partner stays on-site with patient during hospital consultation."
+      },
+      {
+        "code": "PLATFORM_FEE",
+        "name": "Neravu Safety & Platform Coordination",
+        "amount": 100,
+        "description": "Operations desk, trusted contact alerts, and continuous milestone monitoring."
+      },
+      {
+        "code": "TAXES",
+        "name": "Taxes & Statutory Fees",
+        "amount": 90,
+        "description": "Applicable statutory services tax."
+      }
+    ]
+  },
+  "initialFareEstimate": {
+    "currency": "INR",
+    "baseBookingFee": 250,
+    "companionServiceTimeFee": 600,
+    "transitDistanceFee": 350,
+    "platformServiceFee": 100,
+    "taxes": 90,
+    "total": 1390,
+    "isEstimate": true,
+    "components": [
+      {
+        "code": "BASE_SERVICE",
+        "name": "Base Service & Dispatch Fee",
+        "amount": 250,
+        "description": "Care Partner allocation, dispatch, and initial care coordination."
+      },
+      {
+        "code": "TRANSIT_DISTANCE",
+        "name": "Round-Trip Transportation (Two-Leg Distance)",
+        "amount": 350,
+        "description": "Complete two-leg travel: Outbound + Return legs."
+      },
+      {
+        "code": "COMPANION_SERVICE_TIME",
+        "name": "Hospital Visit Accompaniment",
+        "amount": 600,
+        "description": "Care Partner stays on-site with patient during hospital consultation."
+      },
+      {
+        "code": "PLATFORM_FEE",
+        "name": "Neravu Safety & Platform Coordination",
+        "amount": 100,
+        "description": "Operations desk, trusted contact alerts, and continuous milestone monitoring."
+      },
+      {
+        "code": "TAXES",
+        "name": "Taxes & Statutory Fees",
+        "amount": 90,
+        "description": "Applicable statutory services tax."
+      }
+    ]
+  },
+  "emergencyLogs": [
+    {
+      "id": "emg-1791184464524-ckj0",
+      "journeyId": "journey-1791184464523-94a2e",
+      "triggeredAt": "2026-10-05T07:14:24.524Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "triggeredByRole": "CARE_PARTNER",
+      "stateAtTrigger": "PARTNER_ASSIGNED",
+      "previousJourneyState": "PARTNER_ASSIGNED",
+      "locationSnapshot": {
+        "latitude": 12.9716,
+        "longitude": 77.5946,
+        "address": "[DEMO] 104 Sunrise Apts, 4th Main, Indiranagar, Bengaluru (Sample Address)",
+        "landmark": "Near Indiranagar Metro Station (Exit B)",
+        "accessInstructions": "Elevator available, ground floor ramp on the left side of building."
+      },
+      "destinationSnapshot": {
+        "id": "hosp-manipal",
+        "name": "[DEMO] Manipal Hospital (Sample Destination)",
+        "address": "[DEMO] 98 HAL Airport Road, Kodihalli, Bengaluru (Sample)",
+        "latitude": 12.9592,
+        "longitude": 77.6499,
+        "entranceOrDepartment": "Specialty Clinic Pavilion (East Wing)",
+        "accessNotes": "Companion assistance desk immediately inside."
+      },
+      "category": "ACCIDENT",
+      "description": "SOS button pressed during active journey (ACCIDENT).",
+      "status": "ACTIVE"
+    }
+  ],
+  "incidentReports": [],
+  "createdAt": "2026-10-05T07:14:24.523Z",
+  "updatedAt": "2026-10-05T07:14:24.524Z",
+  "previousStateBeforeEmergency": "PARTNER_ASSIGNED"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "NERAVU - Medical Journey Companion & Transport",
+  "description": "A medical journey companion and transport service connecting patients with dedicated Care Partners for hospital visits, waiting assistance, and safe round trips home.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "journey-active-demo-101",
+  "patientId": "dev-user-patient-1",
+  "carePartnerId": "dev-user-partner-1",
+  "pickupLocation": {
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "address": "[DEMO] 104 Sunrise Apts, 4th Main, Indiranagar, Bengaluru (Sample Address)",
+    "landmark": "Near Indiranagar Metro Station (Exit B)",
+    "accessInstructions": "Elevator available, ground floor ramp on the left side of building."
+  },
+  "hospitalDestination": {
+    "id": "hosp-manipal",
+    "name": "[DEMO] Manipal Hospital (Sample Destination)",
+    "address": "[DEMO] 98 HAL Airport Road, Kodihalli, Bengaluru (Sample)",
+    "latitude": 12.9592,
+    "longitude": 77.6499,
+    "entranceOrDepartment": "Specialty Clinic Pavilion (East Wing, OPD 2)",
+    "accessNotes": "Assistance desk immediately right of entryway."
+  },
+  "returnDropoffLocation": {
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "address": "[DEMO] 104 Sunrise Apts, 4th Main, Indiranagar, Bengaluru (Sample Address)",
+    "landmark": "Near Indiranagar Metro Station (Exit B)",
+    "accessInstructions": "Elevator available, ground floor ramp on the left side of building."
+  },
+  "currentState": "HOSPITAL_VISIT",
+  "bookingType": "ON_DEMAND",
+  "isRoundTrip": true,
+  "stateHistory": [
+    {
+      "fromState": "DRAFT",
+      "toState": "DRAFT",
+      "timestamp": "2026-10-05T07:14:24.497Z",
+      "triggeredByUserId": "dev-user-patient-1",
+      "note": "Journey created in DRAFT state."
+    },
+    {
+      "fromState": "DRAFT",
+      "toState": "REQUESTED",
+      "timestamp": "2026-10-05T07:14:24.497Z",
+      "triggeredByUserId": "dev-user-patient-1"
+    },
+    {
+      "fromState": "REQUESTED",
+      "toState": "MATCHING",
+      "timestamp": "2026-10-05T07:14:24.497Z",
+      "triggeredByUserId": "system"
+    },
+    {
+      "fromState": "MATCHING",
+      "toState": "PARTNER_ASSIGNED",
+      "timestamp": "2026-10-05T07:14:24.497Z",
+      "triggeredByUserId": "system"
+    },
+    {
+      "fromState": "PARTNER_ASSIGNED",
+      "toState": "PARTNER_EN_ROUTE",
+      "timestamp": "2026-10-05T07:14:24.497Z",
+      "triggeredByUserId": "dev-user-partner-1"
+    },
+    {
+      "fromState": "PARTNER_EN_ROUTE",
+      "toState": "PARTNER_ARRIVED",
+      "timestamp": "2026-10-05T07:14:24.497Z",
+      "triggeredByUserId": "dev-user-partner-1"
+    },
+    {
+      "fromState": "PARTNER_ARRIVED",
+      "toState": "PATIENT_PICKED_UP",
+      "timestamp": "2026-10-05T07:14:24.497Z",
+      "triggeredByUserId": "dev-user-partner-1"
+    },
+    {
+      "fromState": "PATIENT_PICKED_UP",
+      "toState": "IN_TRANSIT_TO_HOSPITAL",
+      "timestamp": "2026-10-05T07:14:24.497Z",
+      "triggeredByUserId": "dev-user-partner-1"
+    },
+    {
+      "fromState": "IN_TRANSIT_TO_HOSPITAL",
+      "toState": "ARRIVED_AT_HOSPITAL",
+      "timestamp": "2026-10-05T07:14:24.497Z",
+      "triggeredByUserId": "dev-user-partner-1"
+    },
+    {
+      "fromState": "ARRIVED_AT_HOSPITAL",
+      "toState": "HOSPITAL_VISIT",
+      "timestamp": "2026-10-05T07:14:24.497Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "Accompanied Smt. Lakshmi inside Cardiology OPD waiting lounge."
+    }
+  ],
+  "stateTimestamps": {
+    "DRAFT": "2026-10-05T07:14:24.497Z",
+    "REQUESTED": "2026-10-05T07:14:24.497Z",
+    "MATCHING": "2026-10-05T07:14:24.497Z",
+    "PARTNER_ASSIGNED": "2026-10-05T07:14:24.497Z",
+    "PARTNER_EN_ROUTE": "2026-10-05T07:14:24.497Z",
+    "PARTNER_ARRIVED": "2026-10-05T07:14:24.497Z",
+    "PATIENT_PICKED_UP": "2026-10-05T07:14:24.497Z",
+    "IN_TRANSIT_TO_HOSPITAL": "2026-10-05T07:14:24.497Z",
+    "ARRIVED_AT_HOSPITAL": "2026-10-05T07:14:24.497Z",
+    "HOSPITAL_VISIT": "2026-10-05T07:14:24.497Z"
+  },
+  "fareEstimate": {
+    "currency": "INR",
+    "baseBookingFee": 250,
+    "companionServiceTimeFee": 600,
+    "transitDistanceFee": 350,
+    "platformServiceFee": 100,
+    "taxes": 90,
+    "total": 1390,
+    "isEstimate": true
+  },
+  "initialFareEstimate": {
+    "currency": "INR",
+    "baseBookingFee": 250,
+    "companionServiceTimeFee": 600,
+    "transitDistanceFee": 350,
+    "platformServiceFee": 100,
+    "taxes": 90,
+    "total": 1390,
+    "isEstimate": true
+  },
+  "emergencyLogs": [],
+  "incidentReports": [],
+  "specialAssistanceNotes": "[DEMO] Wheelchair assistance requested from entryway to 2nd floor Cardiology.",
+  "createdAt": "2026-10-05T07:14:24.497Z",
+  "updatedAt": "2026-10-05T07:14:24.497Z"
+}

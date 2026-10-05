@@ -1,0 +1,235 @@
+{
+  "id": "journey-1791184462609-5ss0g",
+  "patientId": "dev-user-patient-1",
+  "carePartnerId": "dev-user-partner-1",
+  "pickupLocation": {
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "address": "[DEMO] 104 Sunrise Apts, 4th Main, Indiranagar, Bengaluru (Sample Address)",
+    "landmark": "Near Indiranagar Metro Station (Exit B)",
+    "accessInstructions": "Elevator available, ground floor ramp on the left side of building."
+  },
+  "hospitalDestination": {
+    "id": "hosp-manipal",
+    "name": "[DEMO] Manipal Hospital (Sample Destination)",
+    "address": "[DEMO] 98 HAL Airport Road, Kodihalli, Bengaluru (Sample)",
+    "latitude": 12.9592,
+    "longitude": 77.6499,
+    "entranceOrDepartment": "Specialty Clinic Pavilion (East Wing)",
+    "accessNotes": "Companion assistance desk immediately inside."
+  },
+  "returnDropoffLocation": {
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "address": "[DEMO] 104 Sunrise Apts, 4th Main, Indiranagar, Bengaluru (Sample Address)",
+    "landmark": "Near Indiranagar Metro Station (Exit B)",
+    "accessInstructions": "Elevator available, ground floor ramp on the left side of building."
+  },
+  "currentState": "COMPLETED",
+  "bookingType": "ON_DEMAND",
+  "isRoundTrip": true,
+  "stateHistory": [
+    {
+      "fromState": "DRAFT",
+      "toState": "DRAFT",
+      "timestamp": "2026-10-05T07:14:22.609Z",
+      "triggeredByUserId": "dev-user-patient-1",
+      "note": "Journey created in DRAFT state."
+    },
+    {
+      "fromState": "DRAFT",
+      "toState": "REQUESTED",
+      "timestamp": "2026-10-05T07:14:22.609Z",
+      "triggeredByUserId": "dev-user-patient-1",
+      "note": "Booking requested by patient."
+    },
+    {
+      "fromState": "REQUESTED",
+      "toState": "MATCHING",
+      "timestamp": "2026-10-05T07:14:22.609Z",
+      "triggeredByUserId": "system",
+      "note": "Auto-matching nearest available Care Partner."
+    },
+    {
+      "fromState": "MATCHING",
+      "toState": "PARTNER_ASSIGNED",
+      "timestamp": "2026-10-05T07:14:22.609Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "Care Partner [DEMO] Ramesh Kumar (Test Care Partner) accepted journey dispatch."
+    },
+    {
+      "fromState": "PARTNER_ASSIGNED",
+      "toState": "PARTNER_EN_ROUTE",
+      "timestamp": "2026-10-05T07:14:22.610Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "State transitioned to PARTNER_EN_ROUTE by [DEMO] Ramesh Kumar (Test Care Partner)"
+    },
+    {
+      "fromState": "PARTNER_EN_ROUTE",
+      "toState": "PARTNER_ARRIVED",
+      "timestamp": "2026-10-05T07:14:22.610Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "State transitioned to PARTNER_ARRIVED by [DEMO] Ramesh Kumar (Test Care Partner)"
+    },
+    {
+      "fromState": "PARTNER_ARRIVED",
+      "toState": "PATIENT_PICKED_UP",
+      "timestamp": "2026-10-05T07:14:22.610Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "State transitioned to PATIENT_PICKED_UP by [DEMO] Ramesh Kumar (Test Care Partner)"
+    },
+    {
+      "fromState": "PATIENT_PICKED_UP",
+      "toState": "IN_TRANSIT_TO_HOSPITAL",
+      "timestamp": "2026-10-05T07:14:22.610Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "State transitioned to IN_TRANSIT_TO_HOSPITAL by [DEMO] Ramesh Kumar (Test Care Partner)"
+    },
+    {
+      "fromState": "IN_TRANSIT_TO_HOSPITAL",
+      "toState": "ARRIVED_AT_HOSPITAL",
+      "timestamp": "2026-10-05T07:14:22.610Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "State transitioned to ARRIVED_AT_HOSPITAL by [DEMO] Ramesh Kumar (Test Care Partner)"
+    },
+    {
+      "fromState": "ARRIVED_AT_HOSPITAL",
+      "toState": "HOSPITAL_VISIT",
+      "timestamp": "2026-10-05T07:14:22.611Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "State transitioned to HOSPITAL_VISIT by [DEMO] Ramesh Kumar (Test Care Partner)"
+    },
+    {
+      "fromState": "HOSPITAL_VISIT",
+      "toState": "RETURN_STARTED",
+      "timestamp": "2026-10-05T07:14:22.611Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "State transitioned to RETURN_STARTED by [DEMO] Ramesh Kumar (Test Care Partner)"
+    },
+    {
+      "fromState": "RETURN_STARTED",
+      "toState": "IN_TRANSIT_TO_HOME",
+      "timestamp": "2026-10-05T07:14:22.611Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "State transitioned to IN_TRANSIT_TO_HOME by [DEMO] Ramesh Kumar (Test Care Partner)"
+    },
+    {
+      "fromState": "IN_TRANSIT_TO_HOME",
+      "toState": "PATIENT_RETURNED_HOME",
+      "timestamp": "2026-10-05T07:14:22.612Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "State transitioned to PATIENT_RETURNED_HOME by [DEMO] Ramesh Kumar (Test Care Partner)"
+    },
+    {
+      "fromState": "PATIENT_RETURNED_HOME",
+      "toState": "COMPLETED",
+      "timestamp": "2026-10-05T07:14:22.612Z",
+      "triggeredByUserId": "dev-user-partner-1",
+      "note": "State transitioned to COMPLETED by [DEMO] Ramesh Kumar (Test Care Partner)"
+    }
+  ],
+  "stateTimestamps": {
+    "DRAFT": "2026-10-05T07:14:22.609Z",
+    "REQUESTED": "2026-10-05T07:14:22.609Z",
+    "MATCHING": "2026-10-05T07:14:22.609Z",
+    "PARTNER_ASSIGNED": "2026-10-05T07:14:22.609Z",
+    "PARTNER_EN_ROUTE": "2026-10-05T07:14:22.610Z",
+    "PARTNER_ARRIVED": "2026-10-05T07:14:22.610Z",
+    "PATIENT_PICKED_UP": "2026-10-05T07:14:22.610Z",
+    "IN_TRANSIT_TO_HOSPITAL": "2026-10-05T07:14:22.610Z",
+    "ARRIVED_AT_HOSPITAL": "2026-10-05T07:14:22.610Z",
+    "HOSPITAL_VISIT": "2026-10-05T07:14:22.611Z",
+    "RETURN_STARTED": "2026-10-05T07:14:22.611Z",
+    "IN_TRANSIT_TO_HOME": "2026-10-05T07:14:22.611Z",
+    "PATIENT_RETURNED_HOME": "2026-10-05T07:14:22.612Z",
+    "COMPLETED": "2026-10-05T07:14:22.612Z"
+  },
+  "fareEstimate": {
+    "currency": "INR",
+    "baseBookingFee": 250,
+    "companionServiceTimeFee": 600,
+    "transitDistanceFee": 350,
+    "platformServiceFee": 100,
+    "taxes": 90,
+    "total": 1390,
+    "isEstimate": true,
+    "components": [
+      {
+        "code": "BASE_SERVICE",
+        "name": "Base Service & Dispatch Fee",
+        "amount": 250,
+        "description": "Care Partner allocation, dispatch, and initial care coordination."
+      },
+      {
+        "code": "TRANSIT_DISTANCE",
+        "name": "Round-Trip Transportation (Two-Leg Distance)",
+        "amount": 350,
+        "description": "Complete two-leg travel: Outbound + Return legs."
+      },
+      {
+        "code": "COMPANION_SERVICE_TIME",
+        "name": "Hospital Visit Accompaniment",
+        "amount": 600,
+        "description": "Care Partner stays on-site with patient during hospital consultation."
+      },
+      {
+        "code": "PLATFORM_FEE",
+        "name": "Neravu Safety & Platform Coordination",
+        "amount": 100,
+        "description": "Operations desk, trusted contact alerts, and continuous milestone monitoring."
+      },
+      {
+        "code": "TAXES",
+        "name": "Taxes & Statutory Fees",
+        "amount": 90,
+        "description": "Applicable statutory services tax."
+      }
+    ]
+  },
+  "initialFareEstimate": {
+    "currency": "INR",
+    "baseBookingFee": 250,
+    "companionServiceTimeFee": 600,
+    "transitDistanceFee": 350,
+    "platformServiceFee": 100,
+    "taxes": 90,
+    "total": 1390,
+    "isEstimate": true,
+    "components": [
+      {
+        "code": "BASE_SERVICE",
+        "name": "Base Service & Dispatch Fee",
+        "amount": 250,
+        "description": "Care Partner allocation, dispatch, and initial care coordination."
+      },
+      {
+        "code": "TRANSIT_DISTANCE",
+        "name": "Round-Trip Transportation (Two-Leg Distance)",
+        "amount": 350,
+        "description": "Complete two-leg travel: Outbound + Return legs."
+      },
+      {
+        "code": "COMPANION_SERVICE_TIME",
+        "name": "Hospital Visit Accompaniment",
+        "amount": 600,
+        "description": "Care Partner stays on-site with patient during hospital consultation."
+      },
+      {
+        "code": "PLATFORM_FEE",
+        "name": "Neravu Safety & Platform Coordination",
+        "amount": 100,
+        "description": "Operations desk, trusted contact alerts, and continuous milestone monitoring."
+      },
+      {
+        "code": "TAXES",
+        "name": "Taxes & Statutory Fees",
+        "amount": 90,
+        "description": "Applicable statutory services tax."
+      }
+    ]
+  },
+  "emergencyLogs": [],
+  "incidentReports": [],
+  "createdAt": "2026-10-05T07:14:22.609Z",
+  "updatedAt": "2026-10-05T07:14:22.612Z"
+}

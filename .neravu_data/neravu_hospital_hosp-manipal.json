@@ -1,0 +1,9 @@
+{
+  "id": "hosp-manipal",
+  "name": "[DEMO] Manipal Hospital (Sample Destination)",
+  "address": "[DEMO] 98 HAL Airport Road, Kodihalli, Bengaluru (Sample)",
+  "latitude": 12.9592,
+  "longitude": 77.6499,
+  "entranceOrDepartment": "Specialty Clinic Pavilion (East Wing)",
+  "accessNotes": "Companion assistance desk immediately inside."
+}

@@ -1,0 +1,50 @@
+{
+  "name": "react-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "start": "tsx server.ts",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist server.js",
+    "lint": "tsc --noEmit",
+    "migrate": "tsx src/server/db/migrate.ts",
+    "test:phase1": "tsx test/journey-state-machine.test.ts",
+    "test:phase2": "tsx test/auth-and-rbac.test.ts",
+    "test:phase3": "tsx test/role-workflows.test.ts",
+    "test:phase4": "tsx test/maps-and-routing.test.ts",
+    "test:phase5": "tsx test/pricing-and-emergency.test.ts",
+    "test:phase6a": "tsx test/persistence.test.ts",
+    "test:phase6b": "tsx test/backend-and-postgres.test.ts",
+    "test:phase6c": "tsx test/phase-6c-frontend-backend-integration.test.ts",
+    "test": "tsx test/journey-state-machine.test.ts && tsx test/auth-and-rbac.test.ts && tsx test/role-workflows.test.ts && tsx test/maps-and-routing.test.ts && tsx test/pricing-and-emergency.test.ts && tsx test/persistence.test.ts && tsx test/backend-and-postgres.test.ts && tsx test/phase-6c-frontend-backend-integration.test.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.4.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@vis.gl/react-google-maps": "^1.10.1",
+    "@vitejs/plugin-react": "^6.1.1",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "pg": "^8.23.1",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "vite": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.14.0",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.4.21",
+    "esbuild": "^0.25.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^7.0.2"
+  }
+}

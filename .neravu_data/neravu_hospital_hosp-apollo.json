@@ -1,0 +1,9 @@
+{
+  "id": "hosp-apollo",
+  "name": "[DEMO] Apollo Hospital (Sample Destination)",
+  "address": "[DEMO] 154/11 Bannerghatta Main Rd, Bengaluru (Sample)",
+  "latitude": 12.8954,
+  "longitude": 77.5986,
+  "entranceOrDepartment": "Outpatient Care Center (Gate 2)",
+  "accessNotes": "Wheelchair access ramp at main lobby entrance."
+}
